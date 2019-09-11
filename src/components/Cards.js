@@ -4,12 +4,12 @@ import { Table, } from "semantic-ui-react";
 
 
 const Cards = ({ cards, remove }) => (
-  <Table celled padded>
+  <Table color="blue" columns={2} celled padded>
     <Table.Header>
       <Table.Row>
-        <Table.HeaderCell>Front</Table.HeaderCell>
-        <Table.HeaderCell>Back</Table.HeaderCell>
-        <Table.HeaderCell>Options</Table.HeaderCell>
+        <Table.HeaderCell textAlign="center">Front</Table.HeaderCell>
+      
+        <Table.HeaderCell textAlign="center">Options</Table.HeaderCell>
       </Table.Row>
     </Table.Header>
 
@@ -39,3 +39,8 @@ export default Cards;
       }
     </Table.Body>
   </Table> */
+
+  // <Card.Group itemsPerRow=3> props.flashCards.map( card => ( <FlashCard  {...card} /> 
+    
+  
+  

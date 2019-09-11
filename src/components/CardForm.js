@@ -50,3 +50,20 @@ class CardForm extends React.Component {
 }
 
 export default CardForm;
+
+
+/*
+  const {front, back} = this.state;
+  <Form> <Form.Input>
+  name= label= placeholder= value
+  <Form.Button>Submit
+  componentDidMount() {
+   if (this.props.card) {
+     const{front, back} = this.props.card;
+     this.setState({front, back});
+   }
+ };
+
+
+
+*/

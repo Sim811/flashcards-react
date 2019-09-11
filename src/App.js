@@ -1,18 +1,16 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Cards from "./components/Cards";
 import CardForm from "./components/CardForm";
-
-import './App.css';
 import {Container, Header, Button, Icon, Segment,} from "semantic-ui-react";
 
-class App extends Component {
+class App extends React.Component {
   state = {
     cards: [
       {id:1, front: "FRONT", back: "BACK"},
-      {id:2, front: "Yin", back: "Yang"},
+      {id:2, front: "FRONT", back: "Yang"},
       {id:3, front: "FRONT", back: "BACK"},
     ], 
-    showForm: true
+    showForm: false
   };
 
 
@@ -68,3 +66,19 @@ class App extends Component {
 }
 
 export default App;
+
+
+
+/*
+editCard = (cardData) => {
+  const cards = this.state.cards.filter( card => {
+    if (card.id === cardData.id)
+    return cardData;
+    return card;
+  });
+  this.setState
+}
+
+
+
+*/
