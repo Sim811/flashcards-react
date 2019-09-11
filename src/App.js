@@ -34,6 +34,10 @@ class App extends Component {
     this.setState({ cards, });
   };
 
+  toggleForm =() => {
+    this.setState({ showForm: !this.state.showForm })
+  };
+
 
   render() {
     const {cards, showForm} = this.state;
